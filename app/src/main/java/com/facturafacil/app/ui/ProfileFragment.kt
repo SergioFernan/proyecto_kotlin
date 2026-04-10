@@ -1,0 +1,39 @@
+package com.facturafacil.app.ui
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.facturafacil.app.databinding.FragmentProfileBinding
+
+class ProfileFragment : Fragment() {
+
+    private var _binding: FragmentProfileBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.profileName.text = "Andrea Rodríguez"
+        binding.profileEmail.text = "andrea@facturafacil.com"
+        binding.profilePhone.text = "+57 301 555 1234"
+        binding.profileAddress.text = "Bogotá, Colombia"
+        binding.profileServices.text = "Servicios administrados: energía, agua, internet, administración y crédito."
+        binding.profileSummary.text =
+            "FacturaFácil ayuda a organizar vencimientos, registrar pagos y consultar evidencias desde una sola pantalla."
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}

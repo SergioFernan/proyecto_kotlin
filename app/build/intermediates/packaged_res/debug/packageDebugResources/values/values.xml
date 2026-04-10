@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#000000</color>
+    <color name="brand_primary">#0D6E6E</color>
+    <color name="brand_secondary">#F2A541</color>
+    <color name="menu_background">#12343B</color>
+    <color name="menu_subtitle">#C8D6D8</color>
+    <color name="screen_background">#F4F6F8</color>
+    <color name="text_primary">#18313A</color>
+    <color name="text_secondary">#5E737B</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">FacturaFácil</string>
+    <style name="Theme.FacturaFacil" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/menu_background</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/menu_background</item>
+    </style>
+</resources>

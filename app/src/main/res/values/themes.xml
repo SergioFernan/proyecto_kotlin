@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.FacturaFacil" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/menu_background</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/menu_background</item>
+    </style>
+</resources>
